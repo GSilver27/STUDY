@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Знакомство с HTML</title>
+
+    <link href="../styles/style.css" rel="stylesheet">
+</head>
+<body>
+
+<header id="top" align="center">
+
+    <nav>
+        <div align="left"><a href="../index.html">Назад на главную</a></div>
+    </nav>
+
+    <hr>
+    <h1>Современный <i>HTML</i></h1>
+    <hr>
+
+</header>
+
+    <main>
+
+        <section>
+
+            <details align="center">
+            <summary>Меня можно открыть</summary>
+                На этой странице зайдествованы псевдоэлементы
+                <br>Вот столько: <progress id="bar" max="12" value="4"></progress>
+                <time></time>
+            </details>
+
+            <h2 align="center">Отличия HTML5 от HTML4.01 и XHTML1.0</h2>
+            <p align="center">
+                <strong>Ниже представлен список отличий:</strong>
+            </p>
+
+            <figure>
+                <figcaption><mark>(изображение - Семантические теги)</mark></figcaption>
+                <img src="../media/semantic.png" align="left" width="300" alt="">
+            </figure>
+
+            <ul>
+                <li>Изменён синтаксис</li>
+                <li>Встраивание SVG и MathML в text/html</li>
+                <li>
+                    Новые элементы: &lt;article&gt;, &lt;aside&gt;, &lt;audio&gt;, &lt;canvas&gt;, &lt;command&gt;, &lt;datalist&gt;,
+                    &lt;details&gt;, &lt;embed&gt;, &lt;figcaption&gt;, &lt;figure&gt;, &lt;footer&gt;, &lt;header&gt;, &lt;hgroup&gt;,
+                    &lt;keygen&gt;, &lt;main&gt;, &lt;mark&gt;, &lt;meter&gt;, &lt;nav&gt;, &lt;output&gt;, &lt;progress&gt;,
+                    &lt;rp&gt;, &lt;rt&gt;, &lt;ruby&gt;, &lt;section&gt;, &lt;source&gt;, &lt;summary&gt;, &lt;time&gt;, &lt;video&gt;, &lt;wbr&gt;
+                </li>
+                <li>Новые компоненты ввода: date/time, email, url, search, number, range, tel, color</li>
+                <li>Новые атрибуты: charset (в &lt;meta&gt;), async (в script)</li>
+                <li>Глобальные атрибуты, которые могут быть применены ко всем элементам: id, tabindex, hidden, data-* (пользовательские атрибуты данных)</li>
+                <li>
+                    Элементы, которые будут исключены: &lt;acronym&gt;, &lt;applet&gt;, &lt;basefont&gt;, &lt;big&gt;,
+                    &lt;center&gt;, &lt;dir&gt;, &lt;font&gt;, &lt;frame&gt;, &lt;frameset&gt;, &lt;isindex&gt;,
+                    &lt;noframes&gt;, &lt;strike&gt;, &lt;tt&gt;
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>HTML сущности</h2>
+            <p>
+                HTML-сущности — это части текста ("строки"), которые начинаются с символа амперсанда (&) и заканчиваются
+                точкой с запятой (;). Сущности чаще всего используются для представления специальных символов
+                (которые могут быть восприняты как часть HTML-кода) или невидимых символов (таких как неразрывный пробел).
+                Также вы можете использовать их вместо символов, печать которых с обычной клавиатуры труднодоступна.
+            </p>
+
+            <h3>Зарезервированные (специальные) символы</h3>
+            <p>
+                Некоторые специальные символы зарезервированы для использования в HTML. Это означает,
+                что браузер может распознать их как часть HTML-кода. Например, если вы используете знак "меньше"
+                (<), браузер может воспринять следующий за ним текст как тег. Чтобы такие символы отображались как текст,
+                необходимо заменить их на соответствующие сущности, представленные в таблице ниже.
+            </p>
+
+            <table align="center" cellspacing="0" border="1" cellpadding="15" width="600">
+                <thead>
+                <tr>
+                    <th>Символ</th>
+                    <th>Сущность</th>
+                    <th>Примечание</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>&</td>
+                    <td>& amp;</td>
+                    <td>Может быть интерпретирован как начало последовательности-сущности.</td>
+                </tr>
+
+                <tr>
+                    <td><</td>
+                    <td>& lt;</td>
+                    <td>Может быть интерпретирован как начало тега</td>
+                </tr>
+
+                <tr>
+                    <td>></td>
+                    <td>& gt;</td>
+                    <td>Может быть интерпретирован как окончание тега</td>
+                </tr>
+
+                <tr>
+                    <td>"</td>
+                    <td>& quot;</td>
+                    <td>Может быть интерпретирован как обрамляющая значение атрибута кавычка.</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <div align="center"><a href="#top"><b>&uArr; Вернуться наверх &uArr;</b></a></div>
+    </footer>
+
+</body>
+</html>
